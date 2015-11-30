@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<title>模板页面</title>
+<style type="text/css">
+	img{
+		display: block;
+	}
+	embed{
+		width: 800px;
+		height: 500px;
+	}
+</style>
+</head>
+<body>
+<embed src="2.swf" id="video1"/>
+<a href="javascript:void(0);" onclick="window.open('http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+encodeURIComponent(document.location.href));return false;" title="分享到QQ空间"><img src="http://qzonestyle.gtimg.cn/ac/qzone_v5/app/app_share/qz_logo.png" alt="分享到QQ空间" /></a>
+
+<a href="javascript:void(0)" onclick="postToWb();" class="tmblog"><img src="http://v.t.qq.com/share/images/s/weiboicon16.png"></a>
+
+
+<a href="javascript:void(0);" onclick="window.open('http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?to=pengyou&url='+encodeURIComponent(document.location.href));return false;" title="分享到朋友社区"><img src="http://qzonestyle.gtimg.cn/ac/qzone_v5/app/qzshare/xy-icon.png" alt="分享到朋友社区" /></a>
+
+
+
+
+
+</body>
+<script src="../javascript/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script>
+window.onload=function(){
+
+	
+}
+function postToWb(){
+ 
+var _t = encodeURI(document.title);
+ 
+var _url = encodeURI(document.location);
+ 
+var _appkey = encodeURI("appkey");//你从腾讯获得的appkey
+ 
+var _pic = encodeURI('');//（列如：var _pic='图片url1|图片url2|图片url3....）
+ 
+var _site = '';//你的网站地址
+ 
+var _u = 'http://v.t.qq.com/share/share.php?title='+_t+'&url='+_url+'&appkey='+_appkey+'&site='+_site+'&pic='+_pic;
+ 
+window.open( _u,'转播到腾讯微博', 'width=700, height=680, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, location=yes, resizable=no, status=no' );
+ 
+}
+
+
+
+</script>
+</html>

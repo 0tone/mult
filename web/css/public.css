@@ -1,0 +1,99 @@
+/* 重置样式 */
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+h1,h2,h3,h4,h5,p{
+  margin: 0;
+}
+h1{
+	font-size: 140%;
+}
+h2{
+	font-size: 120px;
+}
+h3{
+	font-size: 100%;
+}
+h4,h5{
+	font-size: 80%;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+img {
+  border: 0;
+}
+a {
+  background-color: transparent;
+  color: #666;
+  text-decoration: none;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+ul,ol{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*媒体查询部分，字体大小设置*/
+
+@media (max-width: 480px){
+  html{
+    font-size: 14px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px){
+  html{
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px){
+  html{
+    font-size: 24px;
+  }
+}
+@media (min-width: 979px) {
+  html{
+    font-size: 24px;
+  }
+}
